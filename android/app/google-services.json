@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "46336563550",
+    "project_id": "office-46692",
+    "storage_bucket": "office-46692.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46336563550:android:389802faf06ed1d65397cf",
+        "android_client_info": {
+          "package_name": "com.assankumdev.office"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46336563550-68tmb0ii6iq2l28ll1r4amv7v1u7psvb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtecvp5a8GZ1iO3l-VzfYW4Z-gGJE-XYw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46336563550-68tmb0ii6iq2l28ll1r4amv7v1u7psvb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

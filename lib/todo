@@ -1,0 +1,27 @@
+Add multiple expense authors from model combiner class to DB //Done:
+
+Seach bar functionality.// Done:
+
+Improve on search result's functionality (tiles from result should have full functionality).// Done:
+
+Edit title functionality for breakdown screen is not working.// Done:
+
+Create onclick effect on the popup menu button to turn to color green the moment it is clicked.// discarded:
+
+moving job from one node to the other overides the previous data. check job model and update move functions. solve using the approach used for updating authors in expense model. // Done:
+
+Work on logged in user. upon reload ui sends user to loggin page which is an error.//Done:
+
+For job details entry, get an icon to represent both vessel and airplane.// later - feature
+
+Add space for extra info for a job.// later-feature
+
+Work on breakdown screen, it keeps showing loading screen instead of loaded data
+
+
+job_archive -> blNumber -> atrributes 
+expense_archive -> blNumber -> attributes
+
+
+otter.ai
+jarvis.ai 
