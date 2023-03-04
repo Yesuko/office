@@ -44,11 +44,15 @@ class UserManager extends ChangeNotifier {
   ) async {
     try {
       User? user = UserDatabase.getCurrentlySignedInUser;
+      print("Im here1");
 
       if (user == null) {
+        print("Im here2");
         if (email != null && password != null) {
+          print("Im here3");
           user = await UserDatabase.signInUsingEmailPassword(
               email: email, password: password);
+          print("Im here4");
         }
       }
 

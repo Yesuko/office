@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 // App titles
-const String kAppTitle = '2PWaves Attendance';
+const String kAppTitle = '2PWaves';
 const String kAttendanceTitle = 'Attendance';
 const String kRecordTitle = 'Record';
 const String kEmployeesTitle = 'Employees';

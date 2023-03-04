@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart';
 
 class FireAuthService {
   static final _singleton = FireAuthService._internal();
@@ -26,5 +27,6 @@ class FireAuthService {
     var port = configPort != 0 ? configPort : 9099;
 
     await _auth.useAuthEmulator(host, port);
+    debugPrint("Using Firebase Fireauth emulator on: $host: $port");
   }
 }
