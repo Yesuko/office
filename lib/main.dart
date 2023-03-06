@@ -13,14 +13,6 @@ void main() async {
   await ConfigurationSetting.config();
 
   // main point to start flutter app
-  runApp(const StartApp());
+  runApp(const StartAppSettings());
 }
 
-class StartApp extends StatelessWidget {
-  const StartApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const StartAppSettings();
-  }
-}

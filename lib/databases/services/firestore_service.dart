@@ -9,20 +9,7 @@ import '../../util.dart';
 
 class FireStoreService {
   static final FirebaseFirestore _fb = FirebaseFirestore.instance;
-  static void configureFirebaseFirestore() {
-    String configHost = const String.fromEnvironment("FIREBASE_EMU_URL");
-    int configPort = const int.fromEnvironment("FB_EMU_PORT");
-
-    // Android emulator must be pointed to 10.0.2.2
-    var defaultHost = Platform.isAndroid ? '10.0.2.2' : 'localhost';
-    var host = configHost.isNotEmpty ? configHost : defaultHost;
-    var port = configPort != 0 ? configPort : 8080;
-
-    _fb.settings = Settings(
-        host: '$host:$port', persistenceEnabled: false, sslEnabled: false);
-    debugPrint("Using Firebase Firestore emulator on: $host: $port");
-  }
-
+ 
   /// employee functions - atttendance
   static DocumentReference<Map<String, dynamic>>
       fetchEmployeeAttendanceForToday(String empId) {

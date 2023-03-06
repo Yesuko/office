@@ -12,19 +12,7 @@ import 'package:office/util.dart';
 class FireRDBService {
   static final DatabaseReference _dbRef = FirebaseDatabase.instance.ref();
 
-  static void configureFirebaseRDB() {
-    String configHost = const String.fromEnvironment("FIREBASE_EMU_URL");
-    int configPort = const int.fromEnvironment("RDB_EMU_PORT");
-
-    // Android emulator must be pointed to 10.0.2.2
-    var defaultHost = Platform.isAndroid ? '10.0.2.2' : 'localhost';
-    var host = configHost.isNotEmpty ? configHost : defaultHost;
-    var port = configPort != 0 ? configPort : 9000;
-
-    FirebaseDatabase.instance.useDatabaseEmulator(host, port);
-
-    debugPrint("Using Firebase RealTime DB emulator on: $host: $port");
-  }
+ 
 
   /// Job Section
   /// ------------
