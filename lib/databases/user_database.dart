@@ -101,18 +101,18 @@ class UserDatabase {
       // trim inputs of trailing and leading white space;
       email = email.trim();
       password = password.trim();
-      print("Im here5");
+     
 
       UserCredential userCredential =
           await FireAuthService.ref.signInWithEmailAndPassword(
         email: email,
         password: password,
       );
-      print(userCredential.user);
+     
 
       return userCredential.user;
     } on FirebaseAuthException catch (e) {
-      print(e.message);
+     
       throw UserDataException(e.message ?? e.code);
     }
   }
